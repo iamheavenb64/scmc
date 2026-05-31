@@ -540,37 +540,42 @@ img {
     }
 }
 
-/* Facebook Update Multi-Colour Glow Note */
+/* Facebook Update Strong Letter Glow */
 .facebook-update-note {
-    font-size: 1.45rem;
-    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
     margin: 1rem 0 0 3.2rem;
     line-height: 1.6;
-    padding: 1rem 1.3rem;
-    border-left: 4px solid #66c32f;
-    border-radius: 12px;
-    background: rgba(102, 195, 47, 0.14);
-    box-shadow: 0 0 18px rgba(102, 195, 47, 0.28);
-    animation: facebookNoticeMultiColour 6s ease-in-out infinite;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    animation: facebookStrongLetterGlow 4s ease-in-out infinite;
 }
 
-@keyframes facebookNoticeMultiColour {
+@keyframes facebookStrongLetterGlow {
     0%, 100% {
-        border-left-color: #66c32f;
-        background: rgba(102, 195, 47, 0.14);
-        box-shadow: 0 0 16px rgba(102, 195, 47, 0.30);
+        color: #ffffff;
+        text-shadow:
+            0 0 6px rgba(102, 195, 47, 0.95),
+            0 0 14px rgba(102, 195, 47, 0.80),
+            0 0 28px rgba(102, 195, 47, 0.65),
+            0 0 45px rgba(102, 195, 47, 0.45);
     }
 
     33% {
-        border-left-color: #1877f2;
-        background: rgba(24, 119, 242, 0.15);
-        box-shadow: 0 0 22px rgba(24, 119, 242, 0.38);
+        color: #f2f8ff;
+        text-shadow:
+            0 0 6px rgba(24, 119, 242, 0.95),
+            0 0 14px rgba(24, 119, 242, 0.80),
+            0 0 28px rgba(24, 119, 242, 0.65),
+            0 0 45px rgba(24, 119, 242, 0.45);
     }
 
     66% {
-        border-left-color: #f34c10;
-        background: rgba(243, 76, 16, 0.14);
-        box-shadow: 0 0 22px rgba(243, 76, 16, 0.36);
+        color: #fff4ed;
+        text-shadow:
+            0 0 6px rgba(243, 76, 16, 0.95),
+            0 0 14px rgba(243, 76, 16, 0.80),
+            0 0 28px rgba(243, 76, 16, 0.65),
+            0 0 45px rgba(243, 76, 16, 0.45);
     }
-
 }
