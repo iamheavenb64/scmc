@@ -14,7 +14,7 @@
         padding: 0.9rem 1rem;
     }
 
-    .select-program-item {
+    .facility-card {
         padding: 2rem;
     }
 }
@@ -38,19 +38,19 @@
         background-position: center center;
     }
 
-    .select-program {
+    .facilities-row {
         grid-template-columns: 1fr;
     }
 
-    .select-program-item {
+    .facility-card {
         min-height: auto;
     }
 
-    #our-class-details {
+    #clinic-gallery {
         grid-template-columns: 1fr;
     }
 
-    #our-class-details img {
+    #clinic-gallery img {
         height: 340px;
     }
 
@@ -112,19 +112,19 @@
         background-position: center;
     }
 
-    .hero-overlay {
+    .clinic-overlay {
         background: rgba(3, 15, 24, 0.62);
     }
 
-    .hero-content h1 {
+    .clinic-content h1 {
         font-size: 4.8rem;
     }
 
-    .hero-content h2 {
+    .clinic-content h2 {
         font-size: 2rem;
     }
 
-    .hero-buttons {
+    .clinic-buttons {
         flex-direction: column;
         align-items: center;
     }
@@ -147,31 +147,31 @@
         font-size: 1.6rem;
     }
 
-    .select-program-item {
+    .facility-card {
         flex-direction: column;
         text-align: center;
         padding: 2.2rem 1.8rem;
     }
 
-    .select-program-item img {
+    .facility-card img {
         width: 95px;
         height: 95px;
     }
 
-    .program-content h4 {
+    .facility-content h4 {
         font-size: 2rem;
     }
 
-    .program-content p {
+    .facility-content p {
         font-size: 1.48rem;
     }
 
-    #our-class-details img {
+    #clinic-gallery img {
         height: 280px;
     }
 
     #contact-details,
-    #give-feedback {
+    #quick-contact-box {
         padding: 2.3rem;
     }
 
@@ -179,7 +179,7 @@
         text-align: left;
     }
 
-    #contact-form button {
+    .contact-btn {
         width: 100%;
     }
 }
@@ -201,25 +201,35 @@
         min-height: 72vh;
     }
 
-    .hero-tag {
+    .clinic-tag {
         font-size: 1.25rem;
     }
 
-    .hero-content h1 {
+    .clinic-content h1 {
         font-size: 3.9rem;
     }
 
-    .hero-content h2 {
+    .clinic-content h2 {
         font-size: 1.75rem;
     }
 
-    #program-list,
-    #our-classes-container,
+    .clinic-badges {
+        gap: 0.7rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .clinic-badges span {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.1rem;
+    }
+
+    #facilities-list,
+    #clinic-gallery-container,
     #contact-section {
         width: 92%;
     }
 
-    #our-class-details img {
+    #clinic-gallery img {
         height: 235px;
     }
 
@@ -231,6 +241,14 @@
     #contact-details p {
         margin-left: 0;
         font-size: 1.45rem;
+    }
+
+    .floating-whatsapp {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+        font-size: 2.7rem;
     }
 
     #footer {
@@ -258,11 +276,11 @@
         padding: 5.5rem 1.4rem;
     }
 
-    .hero-content h1 {
+    .clinic-content h1 {
         font-size: 3.2rem;
     }
 
-    .hero-content h2 {
+    .clinic-content h2 {
         font-size: 1.55rem;
     }
 
@@ -280,38 +298,33 @@
         font-size: 2.2rem;
     }
 
-    .select-program-item {
+    .facility-card {
         padding: 2rem 1.4rem;
         border-radius: 18px;
     }
 
-    .select-program-item img {
+    .facility-card img {
         width: 82px;
         height: 82px;
     }
 
-    .program-content h4 {
+    .facility-content h4 {
         font-size: 1.75rem;
     }
 
-    .program-content p {
+    .facility-content p {
         font-size: 1.38rem;
     }
 
-    #our-class-details img {
+    #clinic-gallery img {
         height: 205px;
         border-radius: 18px;
     }
 
     #contact-details,
-    #give-feedback {
+    #quick-contact-box {
         padding: 2rem 1.5rem;
         border-radius: 18px;
-    }
-
-    #contact-form input,
-    #contact-form textarea {
-        font-size: 1.45rem;
     }
 }
 
@@ -322,11 +335,11 @@
         max-width: 185px;
     }
 
-    .hero-content h1 {
+    .clinic-content h1 {
         font-size: 2.8rem;
     }
 
-    .hero-content h2 {
+    .clinic-content h2 {
         font-size: 1.42rem;
     }
 }

@@ -105,7 +105,7 @@ img {
     transition: all 0.25s ease;
 }
 
-/* Hero Section */
+/* Main Clinic Cover Section */
 #section-first {
     min-height: 88vh;
     position: relative;
@@ -118,7 +118,7 @@ img {
     overflow: hidden;
 }
 
-.hero-overlay {
+.clinic-overlay {
     position: absolute;
     inset: 0;
     background:
@@ -127,7 +127,7 @@ img {
     z-index: 0;
 }
 
-.hero-content {
+.clinic-content {
     position: relative;
     z-index: 1;
     max-width: 920px;
@@ -135,7 +135,7 @@ img {
     animation: fadeUp 0.9s ease both;
 }
 
-.hero-tag {
+.clinic-tag {
     display: inline-block;
     font-size: 1.45rem;
     font-weight: 700;
@@ -146,26 +146,58 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.25);
     margin-bottom: 2rem;
     backdrop-filter: blur(8px);
+    box-shadow: 0 10px 28px rgba(102, 195, 47, 0.18);
 }
 
-.hero-content h1 {
+.clinic-content h1 {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(4rem, 7vw, 8rem);
     line-height: 1.05;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(90deg, #ffffff, #d9ffd0, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
-.hero-content h2 {
+.clinic-content h2 {
     font-size: clamp(1.7rem, 2.5vw, 2.6rem);
     font-weight: 500;
     max-width: 750px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.2rem;
     color: rgba(255, 255, 255, 0.94);
 }
 
-.hero-buttons {
+.clinic-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.clinic-badges span {
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 700;
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(8px);
+    cursor: default;
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.clinic-badges span:hover {
+    transform: translateY(-3px);
+    background: rgba(102, 195, 47, 0.30);
+    border-color: rgba(102, 195, 47, 0.55);
+    box-shadow: 0 10px 22px rgba(102, 195, 47, 0.18);
+}
+
+.clinic-buttons {
     display: flex;
     justify-content: center;
     gap: 1.4rem;
@@ -179,7 +211,7 @@ img {
     justify-content: center;
     border-radius: 999px;
     font-weight: 800;
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .btn-primary-style {
@@ -208,6 +240,13 @@ img {
     box-shadow: 0 15px 28px rgba(0, 0, 0, 0.22);
 }
 
+.btn-primary-style:active,
+.btn-secondary-lg:active,
+.contact-btn:active,
+.floating-whatsapp:active {
+    transform: scale(0.96);
+}
+
 /* Facilities Section */
 #section-second {
     width: 100%;
@@ -219,8 +258,8 @@ img {
     padding: 7rem 0;
 }
 
-#choose-program,
-#our-classes {
+#facilities-heading,
+#clinic-gallery-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,20 +270,20 @@ img {
     text-align: center;
 }
 
-#program-list {
+#facilities-list {
     width: min(1120px, 92%);
     margin: 2rem auto 5rem;
     display: grid;
     gap: 2.2rem;
 }
 
-.select-program {
+.facilities-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.2rem;
 }
 
-.select-program-item {
+.facility-card {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -254,17 +293,17 @@ img {
     padding: 2.4rem;
     min-height: 190px;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
     backdrop-filter: blur(6px);
 }
 
-.select-program-item:hover {
+.facility-card:hover {
     transform: translateY(-7px);
     background: rgba(255, 255, 255, 0.13);
     box-shadow: var(--shadow);
 }
 
-.select-program-item img {
+.facility-card img {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -272,41 +311,42 @@ img {
     filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
 }
 
-.program-content h4 {
+.facility-content h4 {
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 0.6rem;
     color: var(--white);
 }
 
-.program-content p {
+.facility-content p {
     font-size: 1.48rem;
     color: rgba(255, 255, 255, 0.88);
 }
 
-/* Clinic Images */
-#our-classes-container {
+/* Clinic Gallery */
+#clinic-gallery-container {
     width: min(1120px, 92%);
     margin: 2rem auto 0;
 }
 
-#our-class-details {
+#clinic-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
 }
 
-#our-class-details img {
+#clinic-gallery img {
     width: 100%;
     height: 360px;
     object-fit: cover;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-#our-class-details img:hover {
+#clinic-gallery img:hover {
     transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
 }
 
 /* Contact Section */
@@ -348,7 +388,7 @@ img {
 }
 
 #contact-details,
-#give-feedback {
+#quick-contact-box {
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.16);
     border-radius: var(--radius);
@@ -393,7 +433,7 @@ img {
     margin-right: 1rem;
 }
 
-#give-feedback h2 {
+#quick-contact-box h2 {
     text-align: center;
     color: var(--white);
     margin-bottom: 1.8rem;
@@ -424,7 +464,7 @@ img {
     font-weight: 800;
     padding: 1.35rem 1.6rem;
     border-radius: 999px;
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 }
 
 .contact-btn i {
@@ -443,6 +483,31 @@ img {
 
 .whatsapp-btn:hover {
     background: #128C7E;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    z-index: 2000;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+    background: #128C7E;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.30);
 }
 
 /* Footer */
