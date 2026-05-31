@@ -226,7 +226,7 @@
     </a>
 
     <footer id="footer">
-        Copyright &copy; 2026 SITAULA CLINIC & MEDICINE CENTER. All rights reserved.
+    Copyright &copy; <span id="current-year"></span> SITAULA CLINIC & MEDICINE CENTER. All rights reserved.
     </footer>
 
     <script src="https://kit.fontawesome.com/67c3540b64.js" crossorigin="anonymous"></script>
@@ -234,6 +234,7 @@
     <script>
         const menuToggle = document.getElementById("menu-toggle");
         const navbarList = document.getElementById("navbar-list");
+        document.getElementById("current-year").textContent = new Date().getFullYear();
 
         menuToggle.addEventListener("click", function () {
             navbarList.classList.toggle("active");
