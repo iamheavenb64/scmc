@@ -169,34 +169,6 @@ img {
     color: rgba(255, 255, 255, 0.94);
 }
 
-.clinic-badges {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-}
-
-.clinic-badges span {
-    color: white;
-    font-size: 1.35rem;
-    font-weight: 700;
-    padding: 0.8rem 1.4rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    backdrop-filter: blur(8px);
-    cursor: default;
-    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-.clinic-badges span:hover {
-    transform: translateY(-3px);
-    background: rgba(102, 195, 47, 0.30);
-    border-color: rgba(102, 195, 47, 0.55);
-    box-shadow: 0 10px 22px rgba(102, 195, 47, 0.18);
-}
-
 .clinic-buttons {
     display: flex;
     justify-content: center;
