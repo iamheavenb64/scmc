@@ -538,8 +538,9 @@ img {
         opacity: 1;
         transform: translateY(0);
     }
+}
 
-  /* Facebook Update Multi-Colour Glow Note */
+/* Facebook Update Multi-Colour Glow Note */
 .facebook-update-note {
     font-size: 1.45rem;
     color: #ffffff;
