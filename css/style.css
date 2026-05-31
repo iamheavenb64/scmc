@@ -539,7 +539,8 @@ img {
         transform: translateY(0);
     }
 
-    .facebook-update-note {
+  /* Facebook Update Multi-Colour Glow Note */
+.facebook-update-note {
     font-size: 1.45rem;
     color: #ffffff;
     margin: 1rem 0 0 3.2rem;
@@ -547,18 +548,29 @@ img {
     padding: 1rem 1.3rem;
     border-left: 4px solid #66c32f;
     border-radius: 12px;
-    background: rgba(102, 195, 47, 0.12);
-    box-shadow: 0 0 18px rgba(102, 195, 47, 0.25);
-    animation: softNoticeGlow 2.5s ease-in-out infinite;
+    background: rgba(102, 195, 47, 0.14);
+    box-shadow: 0 0 18px rgba(102, 195, 47, 0.28);
+    animation: facebookNoticeMultiColour 6s ease-in-out infinite;
 }
 
-@keyframes softNoticeGlow {
+@keyframes facebookNoticeMultiColour {
     0%, 100% {
-        box-shadow: 0 0 14px rgba(102, 195, 47, 0.22);
+        border-left-color: #66c32f;
+        background: rgba(102, 195, 47, 0.14);
+        box-shadow: 0 0 16px rgba(102, 195, 47, 0.30);
     }
 
-    50% {
-        box-shadow: 0 0 26px rgba(102, 195, 47, 0.45);
+    33% {
+        border-left-color: #1877f2;
+        background: rgba(24, 119, 242, 0.15);
+        box-shadow: 0 0 22px rgba(24, 119, 242, 0.38);
     }
+
+    66% {
+        border-left-color: #f34c10;
+        background: rgba(243, 76, 16, 0.14);
+        box-shadow: 0 0 22px rgba(243, 76, 16, 0.36);
+    }
+}
 
 }
