@@ -17,7 +17,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- All responsive CSS in one file -->
+    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -37,24 +37,33 @@
 
         <ul id="navbar-list">
             <li><a href="#section-first">HOME</a></li>
-            <li><a href="#choose-program">FACILITIES</a></li>
-            <li><a href="#our-classes">CLINIC</a></li>
+            <li><a href="#facilities-heading">FACILITIES</a></li>
+            <li><a href="#clinic-gallery-heading">CLINIC</a></li>
             <li><a href="#contact-us">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Main Clinic Cover Section -->
     <section id="section-first">
-        <div class="hero-overlay"></div>
+        <div class="clinic-overlay"></div>
 
-        <div class="hero-content">
-            <p class="hero-tag">Trusted healthcare support in Kankai Municipality</p>
+        <div class="clinic-content">
+            <p class="clinic-tag">Your trusted healthcare partner in Kankai Municipality</p>
             <h1>Sitaula Clinic & Medicine Center</h1>
-            <h2>Clinic, pharmacy and diagnostic services under one roof.</h2>
+            <h2>Reliable clinic care, pharmacy support and diagnostic services in one place.</h2>
 
-            <div class="hero-buttons">
+            <div class="clinic-badges">
+                <span>OPD</span>
+                <span>Pharmacy</span>
+                <span>Pathology</span>
+                <span>X-Ray</span>
+                <span>ECG</span>
+                <span>ECO</span>
+            </div>
+
+            <div class="clinic-buttons">
                 <a href="#contact-us" class="btn-primary-style btn-primary-lg">CONTACT US</a>
-                <a href="#choose-program" class="btn-secondary-lg">VIEW FACILITIES</a>
+                <a href="#facilities-heading" class="btn-secondary-lg">VIEW FACILITIES</a>
             </div>
         </div>
     </section>
@@ -62,7 +71,7 @@
     <!-- Facilities Section -->
     <section id="section-second">
 
-        <div id="choose-program">
+        <div id="facilities-heading">
             <h1 class="font-large color-white section-second-heading-margin">
                 OUR <span class="font-large color-orange">FACILITIES</span>
             </h1>
@@ -71,56 +80,56 @@
             </p>
         </div>
 
-        <div id="program-list">
+        <div id="facilities-list">
 
-            <div class="select-program">
-                <div class="select-program-item">
+            <div class="facilities-row">
+                <div class="facility-card">
                     <img src="./image/microscope3.png" alt="Pathology lab microscope" class="path">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>PATHOLOGY LAB</h4>
                         <p>Pathology supports patient care through accurate laboratory testing, helping with diagnosis and ongoing health management.</p>
                     </div>
                 </div>
 
-                <div class="select-program-item">
+                <div class="facility-card">
                     <img src="./image/opd.png" alt="OPD doctor consultation" class="opd">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>OPD</h4>
                         <p>We provide doctor consultation support in a friendly clinic environment. Please feel free to visit or contact us.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="select-program">
-                <div class="select-program-item">
+            <div class="facilities-row">
+                <div class="facility-card">
                     <img src="./image/pharmacy.png" alt="Pharmacy medicine" class="pharma">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>PHARMACY</h4>
                         <p>We provide medicine dispensing and counselling support as per the doctor's prescription.</p>
                     </div>
                 </div>
 
-                <div class="select-program-item">
+                <div class="facility-card">
                     <img src="./image/xray2.png" alt="X-ray service" class="xray">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>X-RAY</h4>
                         <p>Standard digital X-rays are performed here to help generate images of tissues and body structures.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="select-program">
-                <div class="select-program-item">
+            <div class="facilities-row">
+                <div class="facility-card">
                     <img src="./image/ecg.png" alt="ECG heart test" class="ecg">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>ECG</h4>
                         <p>ECG is one of the simplest and fastest tests used to evaluate heart activity.</p>
                     </div>
                 </div>
 
-                <div class="select-program-item">
+                <div class="facility-card">
                     <img src="./image/eco.png" alt="ECO echocardiogram" class="eco">
-                    <div class="program-content">
+                    <div class="facility-content">
                         <h4>ECO</h4>
                         <p>We perform echocardiogram checks to see how the heart chambers and valves are working.</p>
                     </div>
@@ -129,18 +138,18 @@
 
         </div>
 
-        <!-- Clinic Images Section -->
-        <div id="our-classes">
+        <!-- Clinic Gallery Section -->
+        <div id="clinic-gallery-heading">
             <h1 class="font-large color-white section-second-heading-margin">
-                SITAULA <span class="font-large color-orange">CLINIC</span>
+                INSIDE <span class="font-large color-orange">OUR CLINIC</span>
             </h1>
             <p class="section-second-paragraph">
-                Clean, accessible and patient-friendly clinic facilities.
+                A clean and organised space for consultation, pharmacy and diagnostic support.
             </p>
         </div>
 
-        <div id="our-classes-container">
-            <div id="our-class-details">
+        <div id="clinic-gallery-container">
+            <div id="clinic-gallery">
                 <img src="./image/clinic1.jpg" alt="Clinic laboratory and corridor">
                 <img src="./image/clinic2.jpg" alt="Clinic laboratory room">
             </div>
@@ -180,37 +189,46 @@
                 </h4>
             </div>
 
-           <div id="give-feedback">
-    <h2 class="font-medium">QUICK CONTACT</h2>
+            <div id="quick-contact-box">
+                <h2 class="font-medium">QUICK CONTACT</h2>
 
-    <p class="quick-contact-text">
-        Contact Sitaula Clinic directly by phone, WhatsApp or email.
-    </p>
+                <p class="quick-contact-text">
+                    Contact Sitaula Clinic directly by phone, WhatsApp or email.
+                </p>
 
-    <div class="quick-contact-buttons">
-        <a href="tel:023552135" class="contact-btn">
-            <i class="fas fa-phone"></i> Call Landline
-        </a>
+                <div class="quick-contact-buttons">
+                    <a href="tel:023552135" class="contact-btn">
+                        <i class="fas fa-phone"></i> Call Landline
+                    </a>
 
-        <a href="tel:+9779843154572" class="contact-btn">
-            <i class="fas fa-mobile-alt"></i> Call Mobile
-        </a>
+                    <a href="tel:+9779843154572" class="contact-btn">
+                        <i class="fas fa-mobile-alt"></i> Call Mobile
+                    </a>
 
-        <a href="https://wa.me/9779843154572?text=Hello%20Sitaula%20Clinic,%20I%20want%20to%20ask%20about%20your%20services." 
-           target="_blank" 
-           rel="noopener" 
-           class="contact-btn whatsapp-btn">
-            <i class="fab fa-whatsapp"></i> WhatsApp Message
-        </a>
+                    <a href="https://wa.me/9779843154572?text=Hello%20Sitaula%20Clinic,%20I%20want%20to%20ask%20about%20your%20services."
+                       target="_blank"
+                       rel="noopener"
+                       class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Message
+                    </a>
 
-        <a href="mailto:rabinctla@gmail.com?subject=Clinic%20Enquiry" class="contact-btn">
-            <i class="fas fa-envelope"></i> Send Email
-        </a>
-    </div>
-</div>
+                    <a href="mailto:rabinctla@gmail.com?subject=Clinic%20Enquiry" class="contact-btn">
+                        <i class="fas fa-envelope"></i> Send Email
+                    </a>
+                </div>
+            </div>
 
         </div>
     </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9779843154572?text=Hello%20Sitaula%20Clinic,%20I%20want%20to%20ask%20about%20your%20services."
+       class="floating-whatsapp"
+       target="_blank"
+       rel="noopener"
+       aria-label="Chat on WhatsApp">
+       <i class="fab fa-whatsapp"></i>
+    </a>
 
     <footer id="footer">
         Copyright &copy; 2026 SITAULA CLINIC & MEDICINE CENTER. All rights reserved.
