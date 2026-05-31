@@ -540,42 +540,38 @@ img {
     }
 }
 
-/* Facebook Update Strong Letter Glow */
+/* Facebook Update Letter Glow */
 .facebook-update-note {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.45rem;
+    font-weight: 700;
     margin: 1rem 0 0 3.2rem;
     line-height: 1.6;
-    letter-spacing: 0.3px;
     color: #ffffff;
-    animation: facebookStrongLetterGlow 4s ease-in-out infinite;
+    animation: facebookLetterGlow 5s ease-in-out infinite;
 }
 
-@keyframes facebookStrongLetterGlow {
+@keyframes facebookLetterGlow {
     0%, 100% {
         color: #ffffff;
         text-shadow:
-            0 0 6px rgba(102, 195, 47, 0.95),
-            0 0 14px rgba(102, 195, 47, 0.80),
-            0 0 28px rgba(102, 195, 47, 0.65),
-            0 0 45px rgba(102, 195, 47, 0.45);
+            0 0 5px rgba(102, 195, 47, 0.70),
+            0 0 12px rgba(102, 195, 47, 0.55),
+            0 0 22px rgba(102, 195, 47, 0.35);
     }
 
     33% {
-        color: #f2f8ff;
+        color: #e8f2ff;
         text-shadow:
-            0 0 6px rgba(24, 119, 242, 0.95),
-            0 0 14px rgba(24, 119, 242, 0.80),
-            0 0 28px rgba(24, 119, 242, 0.65),
-            0 0 45px rgba(24, 119, 242, 0.45);
+            0 0 5px rgba(24, 119, 242, 0.75),
+            0 0 12px rgba(24, 119, 242, 0.55),
+            0 0 22px rgba(24, 119, 242, 0.38);
     }
 
     66% {
-        color: #fff4ed;
+        color: #fff0e8;
         text-shadow:
-            0 0 6px rgba(243, 76, 16, 0.95),
-            0 0 14px rgba(243, 76, 16, 0.80),
-            0 0 28px rgba(243, 76, 16, 0.65),
-            0 0 45px rgba(243, 76, 16, 0.45);
+            0 0 5px rgba(243, 76, 16, 0.75),
+            0 0 12px rgba(243, 76, 16, 0.55),
+            0 0 22px rgba(243, 76, 16, 0.38);
     }
 }
