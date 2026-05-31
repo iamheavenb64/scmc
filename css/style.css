@@ -538,4 +538,27 @@ img {
         opacity: 1;
         transform: translateY(0);
     }
+
+    .facebook-update-note {
+    font-size: 1.45rem;
+    color: #ffffff;
+    margin: 1rem 0 0 3.2rem;
+    line-height: 1.6;
+    padding: 1rem 1.3rem;
+    border-left: 4px solid #66c32f;
+    border-radius: 12px;
+    background: rgba(102, 195, 47, 0.12);
+    box-shadow: 0 0 18px rgba(102, 195, 47, 0.25);
+    animation: softNoticeGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes softNoticeGlow {
+    0%, 100% {
+        box-shadow: 0 0 14px rgba(102, 195, 47, 0.22);
+    }
+
+    50% {
+        box-shadow: 0 0 26px rgba(102, 195, 47, 0.45);
+    }
+
 }
