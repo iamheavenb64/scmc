@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+/* CSS update */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --green: #66c32f;
+    --green-dark: #2a975d;
+    --orange: #f34c10;
+    --dark: #111827;
+    --navy: #1f2937;
+    --blue-dark: rgba(11, 15, 37, 0.86);
+    --white: #ffffff;
+    --light: #f8fafc;
+    --text: #334155;
+    --muted: #64748b;
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    --radius: 22px;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navbar */
+#navbar {
+    background: linear-gradient(to right, #2a975d 1%, #66c32f 100%);
+    min-height: 78px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+#logo a {
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+#navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#navbar-list li a {
+    display: block;
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 1rem 1.4rem;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+}
+
+#navbar-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #f4ffe8;
+}
+
+#menu-toggle {
+    display: none;
+    width: 46px;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    padding: 9px;
+}
+
+#menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    margin: 5px 0;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+/* Hero Section */
+#section-first {
+    min-height: 88vh;
+    position: relative;
+    background: url('../image/main-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(3, 15, 24, 0.88), rgba(3, 15, 24, 0.56), rgba(3, 15, 24, 0.22)),
+        linear-gradient(0deg, rgba(3, 15, 24, 0.22), rgba(3, 15, 24, 0.22));
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 920px;
+    color: var(--white);
+    animation: fadeUp 0.9s ease both;
+}
+
+.hero-tag {
+    display: inline-block;
+    font-size: 1.45rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding: 1rem 1.7rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(8px);
+}
+
+.hero-content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(4rem, 7vw, 8rem);
+    line-height: 1.05;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-content h2 {
+    font-size: clamp(1.7rem, 2.5vw, 2.6rem);
+    font-weight: 500;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary-style,
+.btn-secondary-lg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-weight: 800;
+    transition: all 0.25s ease;
+}
+
+.btn-primary-style {
+    border: 0.2rem solid rgba(255, 255, 255, 0.7);
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn-primary-lg {
+    padding: 1.3rem 2.4rem;
+    font-size: 1.55rem;
+}
+
+.btn-secondary-lg {
+    padding: 1.3rem 2.4rem;
+    font-size: 1.55rem;
+    color: var(--white);
+    border: 0.2rem solid rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+}
+
+.btn-primary-style:hover,
+.btn-secondary-lg:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.22);
+}
+
+/* Facilities Section */
+#section-second {
+    width: 100%;
+    color: var(--white);
+    position: relative;
+    background:
+        linear-gradient(rgba(17, 24, 39, 0.90), rgba(17, 24, 39, 0.92)),
+        url('../image/schedule-bg.jpg') no-repeat center center/cover;
+    padding: 7rem 0;
+}
+
+#choose-program,
+#our-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(1120px, 92%);
+    margin: auto;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#program-list {
+    width: min(1120px, 92%);
+    margin: 2rem auto 5rem;
+    display: grid;
+    gap: 2.2rem;
+}
+
+.select-program {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem;
+}
+
+.select-program-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius);
+    padding: 2.4rem;
+    min-height: 190px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
+    transition: all 0.25s ease;
+    backdrop-filter: blur(6px);
+}
+
+.select-program-item:hover {
+    transform: translateY(-7px);
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: var(--shadow);
+}
+
+.select-program-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex: 0 0 100px;
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
+}
+
+.program-content h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.6rem;
+    color: var(--white);
+}
+
+.program-content p {
+    font-size: 1.48rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+/* Clinic Images */
+#our-classes-container {
+    width: min(1120px, 92%);
+    margin: 2rem auto 0;
+}
+
+#our-class-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+}
+
+#our-class-details img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease;
+}
+
+#our-class-details img:hover {
+    transform: scale(1.02);
+}
+
+/* Contact Section */
+#contact-us {
+    width: 100%;
+    position: relative;
+    background: url('../image/contactUs.jpg') no-repeat center center/cover;
+    padding: 7rem 0;
+    overflow: hidden;
+}
+
+.contact-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 15, 24, 0.78);
+    z-index: 0;
+}
+
+#contact-heading,
+#contact-section {
+    position: relative;
+    z-index: 1;
+}
+
+#contact-heading {
+    width: min(1120px, 92%);
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#contact-section {
+    width: min(1120px, 92%);
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 2.8rem;
+    align-items: stretch;
+}
+
+#contact-details,
+#give-feedback {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: var(--radius);
+    padding: 3rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
+}
+
+#contact-details h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--green);
+    margin-top: 1.5rem;
+}
+
+#contact-details h4:first-child {
+    margin-top: 0;
+}
+
+#contact-details h4 a {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+#contact-details h4 a:hover {
+    color: var(--white);
+}
+
+#contact-details p {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin: 0.6rem 0 1.4rem 3.2rem;
+}
+
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope,
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#give-feedback h2 {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 1.8rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--white);
+    margin: 0.7rem 0 0.4rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.2rem 1.3rem;
+    border-radius: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    outline: none;
+    color: var(--dark);
+    background: rgba(255, 255, 255, 0.92);
+    transition: all 0.25s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 4px rgba(102, 195, 47, 0.20);
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+#contact-form button {
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(to right, #2a975d, #66c32f);
+    color: var(--white);
+    padding: 1.25rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    cursor: pointer;
+    width: 60%;
+    margin: 1.8rem auto 0;
+    transition: all 0.25s ease;
+}
+
+#contact-form button:hover {
+    transform: translateY(-3px);
+    background: var(--orange);
+}
+
+/* Footer */
+#footer {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.8rem 1rem;
+    background-color: rgba(11, 15, 37, 0.95);
+    color: var(--white);
+}
+
+/* Utility classes */
+.font-large {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.font-extra-large {
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-medium {
+    font-size: 2.6rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.color-white {
+    color: var(--white);
+}
+
+.color-orange {
+    color: var(--green);
+}
+
+.section-second-paragraph {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.3rem 1.5rem;
+    max-width: 850px;
+}
+
+.section-second-heading-margin {
+    margin: 1.5rem 0.2rem 1rem 0.2rem;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
