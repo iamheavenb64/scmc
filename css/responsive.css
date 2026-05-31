@@ -196,6 +196,11 @@
         display: block;
         max-width: 250px;
     }
+   
+      .facebook-update-note {
+        margin-left: 0;
+        font-size: 1.35rem;
+    }
 
     #section-first {
         min-height: 72vh;
@@ -213,7 +218,6 @@
         font-size: 1.75rem;
     }
 
-    }
 
     #facilities-list,
     #clinic-gallery-container,
