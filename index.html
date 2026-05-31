@@ -1,257 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Important for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sitaula Ployclinic</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <title>Sitaula Clinic & Medicine Center</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width: 425px)" href="css/responsive.css">
-    <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 1024px)" href="css/ipad-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- All responsive CSS in one file -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
+    <!-- Navbar -->
     <nav id="navbar">
         <div id="logo">
-            <h1 class="font-large color-white">SITAULA CLINIC & MEDICINE CENTER</h1>
+            <a href="#section-first">SITAULA CLINIC & MEDICINE CENTER</a>
         </div>
+
+        <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <ul id="navbar-list">
             <li><a href="#section-first">HOME</a></li>
-            <li><a href="#choose-program">ABOUT</a></li>
-            <li><a href="#our-classes">FACILITIES</a></li>
-            <!-- <li><a href="#section-third">SCHEDULES</a></li> -->
+            <li><a href="#choose-program">FACILITIES</a></li>
+            <li><a href="#our-classes">CLINIC</a></li>
             <li><a href="#contact-us">CONTACT</a></li>
         </ul>
-        <!-- <a href="#" class="btn-primary-style btn-primary-md">SIGN IN</a> -->
     </nav>
 
+    <!-- Hero Section -->
+    <section id="section-first">
+        <div class="hero-overlay"></div>
 
-    <section id="section-first"> 
-        <!-- <h2>WE AIM TO MAKE YOUR LIFE BETTER</h2>
-        <h1 class="font-extra-large color-orange">TAKING CARE OF KANKAI MUNICIPALITY
-        </h1> -->
-        <!-- <a href="#" class="btn-primary-style btn-primary-lg">BOOK A FREE TRIAL</a> -->
+        <div class="hero-content">
+            <p class="hero-tag">Trusted healthcare support in Kankai Municipality</p>
+            <h1>Sitaula Clinic & Medicine Center</h1>
+            <h2>Clinic, pharmacy and diagnostic services under one roof.</h2>
+
+            <div class="hero-buttons">
+                <a href="#contact-us" class="btn-primary-style btn-primary-lg">CONTACT US</a>
+                <a href="#choose-program" class="btn-secondary-lg">VIEW FACILITIES</a>
+            </div>
+        </div>
     </section>
 
+    <!-- Facilities Section -->
     <section id="section-second">
+
         <div id="choose-program">
-            <h1 class="font-large color-white section-second-heading-margin">OUR <span
-                    class="font-large color-orange">FACILITIES</span></h1>
-            <!-- <img src="./image/line-dec.png" alt="line image" class="section-second-img-margin"> -->
-            <p class="section-second-paragraph">"Expert and experienced team with latest diagnostic and medical
-                instruments."</p>
+            <h1 class="font-large color-white section-second-heading-margin">
+                OUR <span class="font-large color-orange">FACILITIES</span>
+            </h1>
+            <p class="section-second-paragraph">
+                Expert and experienced team with latest diagnostic and medical instruments.
+            </p>
         </div>
+
         <div id="program-list">
+
             <div class="select-program">
                 <div class="select-program-item">
-                    <img src="./image/microscope3.png" alt="Programs Lists" class="path">
+                    <img src="./image/microscope3.png" alt="Pathology lab microscope" class="path">
                     <div class="program-content">
                         <h4>PATHOLOGY LAB</h4>
-                        <p>Pathology impacts nearly all aspects of patient care, from diagnosing cancer to managing
-                            chronic diseases through accurate laboratory testing.</p>
-                        <!-- <a href="https://en.wikipedia.org/wiki/Pathology" target="_blank">Discover More</a> -->
+                        <p>Pathology supports patient care through accurate laboratory testing, helping with diagnosis and ongoing health management.</p>
                     </div>
                 </div>
+
                 <div class="select-program-item">
-                    <img src="./image/opd.png" alt="Programs Lists" class="opd">
+                    <img src="./image/opd.png" alt="OPD doctor consultation" class="opd">
                     <div class="program-content">
                         <h4>OPD</h4>
-                        <p>We have selecte some of the finest doctor for your consultation. Feel Free to check out our clinic. We are always ready and happy to server our customer.</p>
-                        <!-- <a href="#">Discover More</a> -->
+                        <p>We provide doctor consultation support in a friendly clinic environment. Please feel free to visit or contact us.</p>
                     </div>
                 </div>
             </div>
+
             <div class="select-program">
                 <div class="select-program-item">
-                    <img src="./image/pharmacy.png" alt="Programs Lists" class="pharma">
+                    <img src="./image/pharmacy.png" alt="Pharmacy medicine" class="pharma">
                     <div class="program-content">
                         <h4>PHARMACY</h4>
-                        <p>Best medicine dispensing and counseling system as per doctor’s prescription. Grab your Prescription and we will try our best to serve.</p>
-                        <!-- <a href="#">Discover More</a> -->
+                        <p>We provide medicine dispensing and counselling support as per the doctor's prescription.</p>
                     </div>
                 </div>
+
                 <div class="select-program-item">
-                    <img src="./image/xray2.png" alt="Programs Lists" class="xray">
+                    <img src="./image/xray2.png" alt="X-ray service" class="xray">
                     <div class="program-content">
                         <h4>X-RAY</h4>
-                        <p>Standard digital X-rays are performed here. Medical x-rays are used to generate images of tissues and structures inside the body.</p> 
-                        <!-- <a href="#">Discover More</a> -->
+                        <p>Standard digital X-rays are performed here to help generate images of tissues and body structures.</p>
                     </div>
                 </div>
             </div>
+
             <div class="select-program">
                 <div class="select-program-item">
-                    <img src="./image/ecg.png" alt="Programs Lists" class="ecg">
+                    <img src="./image/ecg.png" alt="ECG heart test" class="ecg">
                     <div class="program-content">
                         <h4>ECG</h4>
-                        <p>We provid electrocardiogram (ECG) which is one of the simplest and fastest tests used to evaluate the heart. If you have any doubt feel free to contact us.</p>
-                        <!-- <a href="#">Discover More</a> -->
+                        <p>ECG is one of the simplest and fastest tests used to evaluate heart activity.</p>
                     </div>
                 </div>
+
                 <div class="select-program-item">
-                    <img src="./image/eco.png" alt="Programs Lists" class="eco">
+                    <img src="./image/eco.png" alt="ECO echocardiogram" class="eco">
                     <div class="program-content">
                         <h4>ECO</h4>
-                        <p>We perform echocardiogram (ECO) to checks how your heart's chambers and valves are pumping blood through your heart. It shows how your heart muscle and valves are working</p>
-                        <!-- <a href="#">Discover More</a> -->
+                        <p>We perform echocardiogram checks to see how the heart chambers and valves are working.</p>
                     </div>
                 </div>
             </div>
+
         </div>
+
+        <!-- Clinic Images Section -->
         <div id="our-classes">
-            <h1 class="font-large color-white section-second-heading-margin">SITAULA <span
-                    class="font-large color-orange">CLINIC</span></h1>
-            <!-- <img src="./image/line-dec.png" alt="line image" class="section-second-img-margin"> -->
-            <p class="section-second-paragraph">"Expert and experienced team with latest diagnostic and medical
-                instruments"</p>
+            <h1 class="font-large color-white section-second-heading-margin">
+                SITAULA <span class="font-large color-orange">CLINIC</span>
+            </h1>
+            <p class="section-second-paragraph">
+                Clean, accessible and patient-friendly clinic facilities.
+            </p>
         </div>
+
         <div id="our-classes-container">
-            <!-- <div id="our-classes-types">
-                <div class="class-item">
-                    <img src="./image/classes-icon.png" alt="our classes">
-                    <a href="#">
-                        <h4 id="first">First Training Class</h4>
-                    </a>
-                </div>
-                <div class="class-item">
-                    <img src="./image/classes-icon.png" alt="our classes">
-                    <a href="#">
-                        <h4>Second Training Class</h4>
-                    </a>
-                </div>
-                <div class="class-item">
-                    <img src="./image/classes-icon.png" alt="our classes">
-                    <a href="#">
-                        <h4>Third Training Class</h4>
-                    </a>
-                </div>
-                <div class="class-item">
-                    <img src="./image/classes-icon.png" alt="our classes">
-                    <a href="#">
-                        <h4>Fourth Training Class</h4>
-                    </a>
-                </div>
-                <div class="class-schedule">
-                    <a href="#">
-                        <h4>View All Schedules</h4>
-                    </a>
-                </div>
-            </div> -->
             <div id="our-class-details">
-                        <img src="./image/clinic1.jpg" alt="clinic background">
-                        <img src="./image/clinic2.jpg" alt="clinic background">
-                <!-- <h4>First Training Class</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing blan Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Rerum vero ipsa labore cupiditate odit officia sapiente cumque porro libero
-                    itaque!</p> -->
-                <!-- <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet ipsum</p>
-                    <p>officiis nulla rem quibusdam. Voluptatum odit sit.</p> -->
-                <!-- <div class="class-btn">
-                    <a href="#">
-                        <h4>Explore More</h4>
-                    </a>
-                </div> -->
+                <img src="./image/clinic1.jpg" alt="Clinic laboratory and corridor">
+                <img src="./image/clinic2.jpg" alt="Clinic laboratory room">
             </div>
         </div>
     </section>
-    <!-- <section id="section-third">
-        <div id="classes-schedule-header">
-            <h1 class="font-large color-white section-second-heading-margin">DOCTORS <span
-                    class="font-large color-orange">SCHEDULE</span></h1>
-            <img src="./image/line-dec.png" alt="line image" class="section-second-img-margin">
-            <p class="section-second-paragraph">"If you want something you never had, you have to do something you’ve
-                never done."</p>
-        </div>
-        <div id="classes-schedule-details">
-            <p class="section-second-paragraph">Sunday / Monday / Tuesday / Wednesday / Thursday / Friday</p>
-            <table id="classes-schedule-table">
-                <thead>
-                    <tr>
-                        <th>Doctor specialist</th>
-                        <th>Doctor Timing</th>
-                        <th>Doctor Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Yoga</td>
-                        <td>06:00 AM - 07:30 AM</td>
-                        <td>Paras Khadka</td>
-                    </tr>
-                    <tr>
-                        <td>Basic Fitness</td>
-                        <td>08:00 AM - 09:30 AM</td>
-                        <td>Dwayne Johnson</td>
-                    </tr>
-                    <tr>
-                        <td>Basic Cardio</td>
-                        <td>10:00 AM - 11:30 AM</td>
-                        <td>Jason Statham</td>
-                    </tr>
-                    <tr>
-                        <td>Basic Muscle Course</td>
-                        <td>02:00 PM - 03:30 PM</td>
-                        <td>Bruce Wills</td>
-                    </tr>
-                    <tr>
-                        <td>Advance Cardio</td>
-                        <td>04:00 PM - 05:30 PM</td>
-                        <td>Eddie Vedder</td>
-                    </tr>
-                    <tr>
-                        <td>Advance Muscle Course</td>
-                        <td>06:00 PM - 07:30 PM</td>
-                        <td>Paras Khadka</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section> -->
 
+    <!-- Contact Section -->
     <section id="contact-us">
-        <div id="contact-heading">
-            <h1 class="font-large color-white section-second-heading-margin">CONTACT <span
-                    class="font-large color-orange">US</span></h1>
-            <!-- <img src="./image/line-dec.png" alt="line image" class="section-second-img-margin"> -->
-        </div>
-        <div id="contact-section">
-            <div id="contact-details">
-                <h4><i class="fas fa-map-marker-alt"></i>ADDRESS</h4>
-                <p>Kankai Municipality, Nepal</p>
-                <h4><i class="fas fa-phone"></i>PHONE</h4>
-                <p>023 - 552135, +977 - 9843154572</p>
-                <h4><i class="fas fa-envelope"></i>EMAIL</h4>
-                <p>rabinctla@gmail.com.com</p>
+        <div class="contact-bg-overlay"></div>
 
-                <h4><i class="fab fa-facebook"></i><a href="https://www.facebook.com/100078223210341"
-                        target="_blank">Facebook</a></h4>
+        <div id="contact-heading">
+            <h1 class="font-large color-white section-second-heading-margin">
+                CONTACT <span class="font-large color-orange">US</span>
+            </h1>
+            <p class="section-second-paragraph color-white">
+                For consultation, medicine or diagnostic enquiries, contact us directly.
+            </p>
+        </div>
+
+        <div id="contact-section">
+
+            <div id="contact-details">
+                <h4><i class="fas fa-map-marker-alt"></i> ADDRESS</h4>
+                <p>Kankai Municipality, Nepal</p>
+
+                <h4><i class="fas fa-phone"></i> PHONE</h4>
+                <p>023 - 552135<br>+977 - 9843154572</p>
+
+                <h4><i class="fas fa-envelope"></i> EMAIL</h4>
+                <p>rabinctla@gmail.com</p>
+
+                <h4>
+                    <i class="fab fa-facebook"></i>
+                    <a href="https://www.facebook.com/100078223210341" target="_blank" rel="noopener">
+                        Facebook
+                    </a>
+                </h4>
             </div>
+
             <div id="give-feedback">
                 <h2 class="font-medium">SEND MESSAGE</h2>
-                <form method="POST" action="mailto: rabinctla@gmail.com.com" id="contact-form">  
+
+                <form method="POST" action="mailto:rabinctla@gmail.com" id="contact-form">
                     <label for="fname">Name</label>
                     <input type="text" name="fullname" id="fname" required>
+
                     <label for="phone">Contact Number</label>
                     <input type="text" name="ClientPhoneNumber" id="phone" required>
+
                     <label for="subject">Subject</label>
                     <input type="text" name="feedback-subject" id="subject" required>
+
                     <label for="msg">Message</label>
                     <textarea name="message" id="msg" cols="30" rows="5" required></textarea>
-                    <button type="submit" value="Submit">SUBMIT</button> 
+
+                    <button type="submit" value="Submit">SUBMIT</button>
                 </form>
             </div>
+
         </div>
     </section>
 
     <footer id="footer">
-        Copyright &copy; 2022 SITAULA CLINIC & MEDICINE CENTER
+        Copyright &copy; 2026 SITAULA CLINIC & MEDICINE CENTER. All rights reserved.
     </footer>
-    <script src="https://kit.fontawesome.com/67c3540b64.js" crossorigin="anonymous"></script>
-</body>
 
+    <script src="https://kit.fontawesome.com/67c3540b64.js" crossorigin="anonymous"></script>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbarList = document.getElementById("navbar-list");
+
+        menuToggle.addEventListener("click", function () {
+            navbarList.classList.toggle("active");
+            menuToggle.classList.toggle("active");
+
+            const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", !expanded);
+        });
+
+        document.querySelectorAll("#navbar-list a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navbarList.classList.remove("active");
+                menuToggle.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+
+</body>
 </html>
